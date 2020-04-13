@@ -2,9 +2,9 @@ import Head from "next/head";
 
 const Home = () => (
   <>
-    <Head>
+    <Head lang="en">
       <title>Mathias Hansted Frontend developer</title>
-      <link rel="icon" href="/favicon.ico" />
+      <meta name="description" content="Mathias is a frontend developer." />
     </Head>
 
     <main className="main">
