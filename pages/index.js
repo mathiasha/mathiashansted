@@ -19,14 +19,10 @@ const Home = () => (
     </Head>
 
     <main className="main">
-      <Section id="welcome">
-        <Heading level="1" className="title">
-          Welcome
-        </Heading>
+      <Section className="welcome-section" center id="welcome">
+        <Heading level="1">Welcome</Heading>
 
-        <Heading level="2" className="subtitle">
-          I am a freelance frontend developer
-        </Heading>
+        <Heading level="2">I am a freelance frontend developer</Heading>
 
         <p>Send me an email if you want to work together.</p>
 
@@ -36,9 +32,7 @@ const Home = () => (
       </Section>
 
       <Section id="about">
-        <Heading level="2" className="section__heading">
-          About me
-        </Heading>
+        <Heading level="2">About me</Heading>
 
         <p className="section__text">
           I am a frontend developer experienced in building scalable and
@@ -50,35 +44,34 @@ const Home = () => (
       </Section>
 
       <Section id="companies">
-        <Heading level="2" className="section__heading">
-          Some of the companies I've worked with
-        </Heading>
+        <Heading level="2">Some of the companies I've worked with</Heading>
 
         <ul className="companies__list">
           <li className="companies__list-item">
             <a className="companies__link" href="https://nordeainvest.dk/">
-              <NordeaInvest aria-hidden="true" />
+              <NordeaInvest className="companies__logo" aria-hidden="true" />
+              <span className="companies__link-text">Nordea Invest</span>
             </a>
           </li>
 
           <li className="companies__list-item">
             <a className="companies__link" href="https://www.telia.dk/">
-              <Telia aria-hidden="true" />
+              <Telia className="companies__logo" aria-hidden="true" />
+              <span className="companies__link-text">Telia</span>
             </a>
           </li>
 
           <li className="companies__list-item">
             <a className="companies__link" href="https://www.wsa.com/">
-              <WSA aria-hidden="true" />
+              <WSA className="companies__logo" aria-hidden="true" />
+              <span className="companies__link-text">WS Audiology</span>
             </a>
           </li>
         </ul>
       </Section>
 
       <Section id="testimonials">
-        <Heading level="2" className="section__heading">
-          What people have said about me
-        </Heading>
+        <Heading level="2">What people have said about me</Heading>
 
         <ul>
           <li>
