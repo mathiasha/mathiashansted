@@ -20,17 +20,22 @@ body {
 @import "./components/section.scss";
 
 .companies {
-  &__list {
+  padding: 0;
+
+  @media (min-width: 700px) {
     display: flex;
-    padding: 0;
   }
 
-  &__list-item {
-    flex: 1 0 33.333%;
+  &__item {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
+
+    @media (min-width: 700px) {
+      flex: 1 0 33.333%;
+    }
   }
 
   &__logo {
@@ -47,5 +52,35 @@ body {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; /* added line */
+  }
+}
+
+.testimonials {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    margin-top: 40px;
+  }
+
+  &__quote {
+    margin: 0;
+
+    &-body {
+      font-style: italic;
+
+      &:before,
+      &:after {
+        content: '"';
+      }
+    }
+  }
+
+  &__author {
+    font-size: 0.875rem;
+
+    &:before {
+      content: "-";
+    }
   }
 }
