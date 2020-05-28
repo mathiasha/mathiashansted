@@ -7,6 +7,10 @@ import NordeaInvest from "../components/Nordea-invest";
 import Telia from "../components/Telia";
 import WSA from "../components/WSAudiology";
 
+export const config = {
+  unstable_runtimeJS: false,
+};
+
 const Home = () => (
   <>
     <Head lang="en">
