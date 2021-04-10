@@ -6,6 +6,8 @@ import Heading from "../components/Heading";
 import NordeaInvest from "../components/Nordea-invest";
 import Telia from "../components/Telia";
 import WSA from "../components/WSAudiology";
+import Rejsekort from "../components/Rejsekort";
+import DanskeBank from "../components/DanskeBank";
 
 export const config = {
   unstable_runtimeJS: false,
@@ -24,7 +26,7 @@ const Home = () => (
 
     <main className="main">
       <Section id="about">
-        <Heading level="1">Hello...</Heading>
+        <Heading level="1">Hi there...</Heading>
 
         <Heading level="2">My name is Mathias Hansted</Heading>
 
@@ -49,6 +51,22 @@ const Home = () => (
         </Heading>
 
         <ul className="companies">
+          <li className="companies__item">
+            <a className="companies__link" href="https://danskebank.dk/">
+              <DanskeBank className="companies__logo" aria-hidden="true" />
+
+              <span className="companies__link-text">Danske Bank</span>
+            </a>
+          </li>
+
+          <li className="companies__item">
+            <a className="companies__link" href="https://www.rejsekort.dk/">
+              <Rejsekort className="companies__logo" aria-hidden="true" />
+
+              <span className="companies__link-text">Rejsekort</span>
+            </a>
+          </li>
+
           <li className="companies__item">
             <a className="companies__link" href="https://www.telia.dk/">
               <Telia className="companies__logo" aria-hidden="true" />
@@ -90,6 +108,23 @@ const Home = () => (
               <footer className="testimonials__author">
                 Kim Johannesen,{" "}
                 <span className="testimonials__author-title">CEO, Shift</span>
+              </footer>
+            </blockquote>
+          </li>
+
+          <li className="testimonials__item">
+            <blockquote className="testimonials__quote">
+              <p className="testimonials__quote-body">
+                Mathias has specifically contributed with development and
+                integration to map services and React apps. It has included
+                communication with stakeholders, customers and supplier. In
+                addition, he has been a valued sparring partner for the entire
+                team, across competencies, where he has also contributed with
+                his reliability and good humor.
+              </p>
+
+              <footer className="testimonials__author">
+                Peter Ravn Thers, <span>Senior Project manager, Pentia</span>
               </footer>
             </blockquote>
           </li>
