@@ -124,7 +124,7 @@ const Home = () => (
               </p>
 
               <footer className="testimonials__author">
-                Peter Ravn Thers, <span>Senior Projektleder, Pentia</span>
+                Peter Ravn Thers, <span>Senior Project manager, Pentia</span>
               </footer>
             </blockquote>
           </li>
