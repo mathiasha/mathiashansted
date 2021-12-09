@@ -1,6 +1,6 @@
 const DanskeBank = (props) => (
   <svg width="180" height="27" xmlns="http://www.w3.org/2000/svg">
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <path
         d="M115.54 26.905h64.384V.025H115.54v26.88zM179.227.715v25.5h-62.994V.716h62.994zM.084.025H112.76v26.88H.083V.025z"
         fill="#003F63"
