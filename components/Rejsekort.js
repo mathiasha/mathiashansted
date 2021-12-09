@@ -1,6 +1,6 @@
 const Rejsekort = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.86 23.6" {...props}>
-    <g fill-rule="evenodd">
+    <g fillRule="evenodd">
       <path
         d="M0 11.8a11.79 11.79 0 1111.78 11.8A11.8 11.8 0 010 11.8"
         fill="#1083c6"
